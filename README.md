@@ -8,7 +8,7 @@
 
  added [`grunt-gh-pages`](https://github.com/tschaub/grunt-gh-pages) task to push compiled build to [github pages](http://so0k.github.io/ngbp-foundation-libsass)
 
- #TODO
+ ## TODO
 
  * Add Angular-Foundation [demos](http://madmimi.github.io/angular-foundation/)
  * Replace `grunt-express` by `grunt-contrib-connect`
