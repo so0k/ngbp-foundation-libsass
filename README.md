@@ -1,11 +1,7 @@
 # My bp demo
 
-`ngBoilerplate` angular project template:
- * generated using `thardy\generator-ngbp`
- * Bootstrap, angular-Bootstrap, jQuery stripped
- * Foundation5, angular-Foundation added
- * updated gruntFile
-
-***
-
-## Quick Start
+[`ngBoilerplate`](https://github.com/ngbp/ngbp) angular project template:
+ * Generated using [`thardy\generator-ngbp`](https://github.com/thardy/generator-ngbp)
+ * Stripped Bootstrap, angular-Bootstrap, jQuery
+ * Added Foundation5, angular-Foundation
+ * Updated gruntFile
