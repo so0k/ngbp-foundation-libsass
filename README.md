@@ -10,8 +10,10 @@
 
  ## TODO
 
- * Add Angular-Foundation [demos](http://madmimi.github.io/angular-foundation/)
+ * Test Angular-Foundation [demos](http://madmimi.github.io/angular-foundation/)
  * Replace `grunt-express` by `grunt-contrib-connect`
  * Add `grunt-conventional-changelog`
  * Add `ng-annotate`
+ * Add `grunt-wiredep` if possible
  * Add any other differences with `ngBoilerplate`
+
