@@ -10,7 +10,7 @@ angular.module("about/about.tpl.html", []).run(["$templateCache", function($temp
 angular.module("home/home.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("home/home.tpl.html",
     "<div class=\"panel\">\n" +
-    "  <h1>Home with fancy css</h1>\n" +
+    "  <h1>Home</h1>\n" +
     "\n" +
     "  <p>with <span class=\"fa fa-heart\"></span> from so0k</p>\n" +
     "\n" +

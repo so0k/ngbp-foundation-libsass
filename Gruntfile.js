@@ -21,6 +21,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-html2js');
     grunt.loadNpmTasks('grunt-express');
     grunt.loadNpmTasks('grunt-sass');
+    grunt.loadNpmTasks('grunt-gh-pages');
 
     /** ********************************************************************************* */
     /** **************************** File Config **************************************** */
@@ -600,6 +601,13 @@ module.exports = function(grunt) {
                     livereload: false
                 }
             }
+        },
+
+        'gh-pages': {
+            options: {
+                base: 'bin'
+            },
+            src: '**/*'
         }
     };
 
