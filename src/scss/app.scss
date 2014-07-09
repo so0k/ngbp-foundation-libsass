@@ -1,0 +1,49 @@
+@import "settings";
+@import "../../vendor/foundation5-sass/scss/foundation";
+
+// Or selectively include components
+// @import
+//   "../../vendor/foundation5-sass/scss/foundation/components/accordion",
+//   "../../vendor/foundation5-sass/scss/foundation/components/alert-boxes",
+//   "../../vendor/foundation5-sass/scss/foundation/components/block-grid",
+//   "../../vendor/foundation5-sass/scss/foundation/components/breadcrumbs",
+//   "../../vendor/foundation5-sass/scss/foundation/components/button-groups",
+//   "../../vendor/foundation5-sass/scss/foundation/components/buttons",
+//   "../../vendor/foundation5-sass/scss/foundation/components/clearing",
+//   "../../vendor/foundation5-sass/scss/foundation/components/dropdown",
+//   "../../vendor/foundation5-sass/scss/foundation/components/dropdown-buttons",
+//   "../../vendor/foundation5-sass/scss/foundation/components/flex-video",
+//   "../../vendor/foundation5-sass/scss/foundation/components/forms",
+//   "../../vendor/foundation5-sass/scss/foundation/components/grid",
+//   "../../vendor/foundation5-sass/scss/foundation/components/inline-lists",
+//   "../../vendor/foundation5-sass/scss/foundation/components/joyride",
+//   "../../vendor/foundation5-sass/scss/foundation/components/keystrokes",
+//   "../../vendor/foundation5-sass/scss/foundation/components/labels",
+//   "../../vendor/foundation5-sass/scss/foundation/components/magellan",
+//   "../../vendor/foundation5-sass/scss/foundation/components/orbit",
+//   "../../vendor/foundation5-sass/scss/foundation/components/pagination",
+//   "../../vendor/foundation5-sass/scss/foundation/components/panels",
+//   "../../vendor/foundation5-sass/scss/foundation/components/pricing-tables",
+//   "../../vendor/foundation5-sass/scss/foundation/components/progress-bars",
+//   "../../vendor/foundation5-sass/scss/foundation/components/reveal",
+//   "../../vendor/foundation5-sass/scss/foundation/components/side-nav",
+//   "../../vendor/foundation5-sass/scss/foundation/components/split-buttons",
+//   "../../vendor/foundation5-sass/scss/foundation/components/sub-nav",
+//   "../../vendor/foundation5-sass/scss/foundation/components/switch",
+//   "../../vendor/foundation5-sass/scss/foundation/components/tables",
+//   "../../vendor/foundation5-sass/scss/foundation/components/tabs",
+//   "../../vendor/foundation5-sass/scss/foundation/components/thumbs",
+//   "../../vendor/foundation5-sass/scss/foundation/components/tooltips",
+//   "../../vendor/foundation5-sass/scss/foundation/components/top-bar",
+//   "../../vendor/foundation5-sass/scss/foundation/components/type",
+//   "../../vendor/foundation5-sass/scss/foundation/components/offcanvas",
+//   "../../vendor/foundation5-sass/scss/foundation/components/visibility";
+
+.top-bar-section li.active{
+  a:not(.button){
+    background: $topbar-link-bg-active;
+  }
+  a:not(.button):hover{
+    background: $topbar-link-bg-active-hover;
+  }
+}

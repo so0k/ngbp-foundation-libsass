@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="gruntjs" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://F:/.IntelliJIdea13/system/extLibs/http_github.com_borisyankov_DefinitelyTyped_raw_master_gruntjs_gruntjs.d.ts" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://F:/.IntelliJIdea13/system/extLibs/http_github.com_borisyankov_DefinitelyTyped_raw_master_gruntjs_gruntjs.d.ts" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="myBpDemo" ng-controller="AppController">
+<head>
+  <title ng-bind="pageTitle"></title>
+  <!-- font awesome from BootstrapCDN -->
+  <!--<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">-->
+  <!--<link href="//cdnjs.cloudflare.com/ajax/libs/foundation/5.3.0/css/foundation.min.css" rel="stylesheet">-->
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- compiled CSS --><% styles.forEach( function ( file ) { %>
+  <link rel="stylesheet" type="text/css" href="<%= file %>" /><% }); %>
+  <!-- compiled JavaScript --><% scripts.forEach( function ( file ) { %>
+  <script type="text/javascript" src="<%= file %>"></script><% }); %>
+</head>
+<body>
+ <div class="contain-to-grid sticky">
+   <nav class="top-bar">
+     <ul class="title-area">
+        <li class="name"><h1><a href="index.html">My ngBoilerplate Demo</a></h1></li>
+        <li class="toggle-topbar menu-icon">
+            <a href="#">
+                <span>Menu</span>
+            </a>
+        </li>
+     </ul>
+     <section class="top-bar-section">
+       <ul class="left">
+         <li class="divider"></li>
+         <li ui-sref-active="active">
+           <a ui-sref="home">Home</a>
+         </li>
+         <li class="divider"></li>
+         <li ui-sref-active="active">
+           <a ui-sref="about">About</a>
+         </li>
+         <li class="divider"></li>
+       </ul>
+     </section>
+   </nav>
+ </div>
+  <div class="row">
+    <div class="large-12 columns " ui-view="main"></div>
+  </div>
+  <footer class="row">
+    <div class="large-12 columns">
+      (c) <%= date %> <%= author %>
+    </div>
+  </footer>
+</body>
+</html>
