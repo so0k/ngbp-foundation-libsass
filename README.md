@@ -1,6 +1,10 @@
 # My bp demo
 
-A simplified version of the ngBoilerplate angular project template.
+`ngBoilerplate` angular project template:
+ * generated using `thardy\generator-ngbp`
+ * Bootstrap, angular-Bootstrap, jQuery stripped
+ * Foundation5, angular-Foundation added
+ * updated gruntFile
 
 ***
 
