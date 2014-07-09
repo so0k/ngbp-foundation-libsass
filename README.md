@@ -6,8 +6,7 @@
  * Added Foundation5-sass, angular-Foundation
  * Updated gruntFile for `libsass` support (no Ruby dependencies)
  * Replaced `grunt-express` by `grunt-contrib-connect`
-
- added [`grunt-gh-pages`](https://github.com/tschaub/grunt-gh-pages) task to push compiled build to [github pages](http://so0k.github.io/ngbp-foundation-libsass)
+ * Added [`grunt-gh-pages`](https://github.com/tschaub/grunt-gh-pages) task to push compiled build to [github pages](http://so0k.github.io/ngbp-foundation-libsass)
 
  ## TODO
 
