@@ -14,12 +14,12 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-coffee');
+    grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-coffeelint');
     grunt.loadNpmTasks('grunt-recess');
     grunt.loadNpmTasks('grunt-karma');
     grunt.loadNpmTasks('grunt-ngmin');
     grunt.loadNpmTasks('grunt-html2js');
-    grunt.loadNpmTasks('grunt-express');
     grunt.loadNpmTasks('grunt-sass');
     grunt.loadNpmTasks('grunt-gh-pages');
 
@@ -429,14 +429,49 @@ module.exports = function(grunt) {
             }
         },
 
-        express: {
-            devServer: {
+        connect: {
+            options: {
+                port: 9000,
+                // Change this to '0.0.0.0' to access the server from outside.
+                hostname: 'localhost',
+                livereload: 35729
+            },
+            livereload: {
                 options: {
-                    port: 9000,
-                    hostname: 'localhost',
-                    serverreload: false,
-                    bases: 'build',
-                    livereload: true
+                    //open: true,
+                    base: '<%= build_dir %>'
+                    /*middleware: function (connect) {
+                        return [
+                            connect.static('.tmp'),
+                            connect().use(
+                                '/bower_components',
+                                connect.static('./bower_components')
+                            ),
+                            connect.static('<%= build_dir %>')
+                        ];
+                    }*/
+                }
+            },
+            /*test: {
+                options: {
+                    port: 9001,
+                    middleware: function (connect) {
+                        return [
+                            connect.static('.tmp'),
+                            connect.static('test'),
+                            connect().use(
+                                '/bower_components',
+                                connect.static('./bower_components')
+                            ),
+                            connect.static('<%= build_dir %>')
+                        ];
+                    }
+                }
+            },*/
+            dist: {
+                options: {
+                    //open: true,
+                    base: '<%= compile_dir %>'
                 }
             }
         },
@@ -605,7 +640,7 @@ module.exports = function(grunt) {
 
         'gh-pages': {
             options: {
-                base: 'bin'
+                base: '<%= compile_dir %>'
             },
             src: '**/*'
         }
@@ -622,7 +657,7 @@ module.exports = function(grunt) {
     // 'delta') and then add a new task called 'watch' that does a clean build
     // before watching for changes.
     grunt.renameTask('watch', 'delta');
-    grunt.registerTask('watch', [ 'build', 'karma:unit', 'express', 'delta' ]);
+    grunt.registerTask('watch', [ 'build', 'karma:unit', 'connect:livereload', 'delta' ]);
 
     // The default task is to build and compile.
     grunt.registerTask('default', [ 'build', 'compile' ]);

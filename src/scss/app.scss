@@ -47,3 +47,16 @@
     background: $topbar-link-bg-active-hover;
   }
 }
+
+$footer-bg-color: #333;
+$footer-color: #fff;
+
+//silly try at some css
+.ngbp-footer{
+  background: $footer-bg-color;
+  color: $footer-color;
+  @include label-base;
+  @include label-size;
+  padding: 0px;
+  margin: 0px;
+}

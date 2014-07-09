@@ -12,7 +12,9 @@ angular.module("home/home.tpl.html", []).run(["$templateCache", function($templa
     "<div class=\"panel\">\n" +
     "  <h1>Home</h1>\n" +
     "\n" +
-    "  <p>with <span class=\"fa fa-heart\"></span> from so0k</p>\n" +
+    "  <a class=\"button small\" href=\"https://github.com/so0k/ngbp-foundation-libsass\">\n" +
+    "    <span class=\"fa fa-github fa-2x\"></span> View on GitHub\n" +
+    "  </a>\n" +
     "\n" +
     "  <p>\n" +
     "    <span ng-bind=\"someVar\" />\n" +
